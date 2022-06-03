@@ -167,3 +167,34 @@ do
   sed s/FOO/BAR/g $i > /tmp/temp_${i}.$$ && mv /tmp/temp_${i}.$$ $i
 done
 ```
+
+# From The Unix Programming Environment book
+
+## Common File System Commands
+
+| Command                | Action                                                |
+|------------------------|-------------------------------------------------------|
+| ls                     | list names of all files in current directory          |
+| ls filenames           | list only the named files                             |
+| ls -t                  | list in time order, most recent first.                |
+| ls -1                  | list long: more information; also ls-lt               |
+| ls -u                  | list by time last used; also ls -lu, ls -lut          |
+| ls -r                  | list in reverse order; also -rt, -rlt, etc.           |
+| ed filename            | edit named file                                       |
+| cp filel file?         | copy filel to file2, overwrite old file2 if it exists |
+| mv filel file2         | move fill to file2, overwrite old file2 if it exists  |
+| rm filenames           | remove named files, irrevocably                       |
+| cat filenames          | print contents of named files                         |
+| pr filenames           | print contents with header, 66 lines per page         |
+| pr -n filenames        | print in n columns                                    |
+| pr -m filenames        | print named files side by side (multiple columns)     |
+| wc filenames           | count lines, words and characters for each file       |
+| wc -1 filenames        | count lines for each file                             |
+| grep pattern filenames | print lines matching pattern                          |
+| grep -v pattern files  | print lines not matching pattern                      |
+| sort filenames         | sort files alphabetically by line                     |
+| tail filename          | print last 10 lines of file                           |
+| tail -n filename       | print last n lines of file                            |
+| tail +n filename       | start printing file at line n                         |
+| cmp file1 file2        | print location of first difference                    |
+| diff file1 file2       | print all differences between files                   |
